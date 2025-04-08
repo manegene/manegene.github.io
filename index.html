@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <style>
+  
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
@@ -29,6 +31,21 @@
       font-size: 1.1rem;
       margin-top: 10px;
     }
+	.linkedin-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077b5;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.linkedin-btn:hover {
+  background-color: #005582;
+}
+
 
     main {
       max-width: 1000px;
@@ -89,15 +106,20 @@
 }
 
   </style>
+  
 </head>
 <body>
 
   <header>
     <h1>Robert Manegene</h1>
     <p>Software Engineer | Web Designer | Tech Enthusiast</p>
-    <a href="https://github.com/manegene?tab=repositories" download class="download-btn">
-      <i class="fa fa-download"></i> Github Portfolio
-    </a>
+ <section style="text-align: center; margin: 2rem 0;">
+    <a href="https://github.com/manegene?tab=repositories" class="download-btn">
+      <i class="fab fa-github"></i> Github Portfolio </a>
+  <a href="https://www.linkedin.com/in/robertmanegene" target="_blank" class="linkedin-btn">
+    <i class="fab fa-linkedin"></i> Connect with me on LinkedIn
+  </a>
+</section>
   </header>
 
   <main>
@@ -127,14 +149,24 @@
 		The base address is the your store web address. 
 		eg, https://localhost/restapi{/endpoint}. 
 		The method specific route will be indicated for each method in more details section</p>
+		<a href="Builds/Misc.RestAPI.zip" download class="download-btn">
+        <i class="fas fa-download"></i> Ready to deploy plugin file
+        </a>
 		</div>
 		<div class="card">
 		<h3><a href="https://github.com/manegene/Nop.Plugin.Payments.LipanaMpesa.git">LipanaMpesa Plugin</a></h3>
-		<p>A nopCommerce plugin for M-Pesa checkout payment option. To use it on your nopCommerce site, simply add it as a plugin project, clean and build</p>
+		<p>A nopCommerce plugin for M-Pesa checkout payment option. To use it on your nopCommerce site,
+		simply add it as a plugin project, clean and build</p>
+		<a href="Builds/Nop.Plugin.Payments.LipanaMpesa.zip" download class="download-btn">
+        <i class="fas fa-download"></i> Ready to deploy plugin file
+        </a>
 		</div>
 		<div class="card">
 		<h3><a href="https://github.com/manegene/payments.pesapal.git">Pesapal Plugin</a></h3>
 		<p>Pesapal plugin for NopCommerce</p>
+		<a href="Builds/Payments.Pesapal.zip" download class="download-btn">
+        <i class="fas fa-download"></i> Ready to deploy plugin file
+        </a>
 		</div>
 		<div class="card">
 		<h3><a href="https://github.com/manegene/Neural-Network-SMS_Text-Classifier.git">NN-SMS Text Classifier</a></h3>
@@ -171,6 +203,7 @@
   </form>
 	
 	</section>
+
   </main>
 
   <footer>
