@@ -6,6 +6,9 @@
   <title>My Portfolio</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <style>
   
     body {
@@ -66,6 +69,67 @@
   background-color: #4b4f91;
   color: #fff;
 }
+
+#skills {
+  padding: 50px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.skill-card i {
+  color: #0078D4;
+  margin-right: 8px;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-card ul li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* 🔁 Responsive behavior */
+@media (max-width: 768px) {
+  .skill-card {
+    width: 100%;
+  }
+}
+
 
 .social-nav a {
   display: inline-block;
@@ -213,17 +277,74 @@
       </div>
     </section>
 
-    <section>
-      <h2>Skills</h2>
-      <div class="skills">
-        <div class="card">JavaScript</div>
-        <div class="card">C# / .NET</div>
-        <div class="card">SQL & Databases</div>
-        <div class="card">HTML/CSS</div>
-        <div class="card">Git & GitHub</div>
-        <div class="card">REST APIs</div>
-      </div>
-    </section>
+    <section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+      <h3><i class="fas fa-headset"></i> Customer Technical support</h3>
+      <ul>
+        <li>Provided tier 1–3 support for SaaS and web-based platforms</li>
+      <li>Diagnosed issues using logs, API responses, and console tools</li>
+      <li>Guided users through complex configurations and onboarding</li>
+      <li>Created documentation and video walkthroughs for clients</li>
+      </ul>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up-right" data-aos-delay="300">
+      <h3><i class="fas fa-code"></i> Development and Debugging</h3>
+      <ul>
+        <li>Fixed frontend/backend bugs in production and staging environments</li>
+      <li>Maintained and extended legacy codebases</li>
+      <li>Created APIs and integrations for third-party services</li>
+      <li>Version control via Git/GitHub, CI/CD pipelines</li>
+      </ul>
+    </div>
+
+    <div class="skill-card" data-aos="fade-left" data-aos-delay="200">
+      <h3><i class="fas fa-plug"></i> Plaform Integrations</h3>
+      <ul>
+        <li>Integrated payment gateways (M-Pesa, Google Pay, PayPal, Stripe)</li>
+      <li>Connected CRMs via APIs</li>
+      <li>Single Sign-On (SSO) via OAuth2, SAML, WS-Trust</li>
+      <li>ERP and Inventory integrations with custom logic</li>
+      </ul>
+    </div>
+	
+	 <div class="skill-card" data-aos="flip-up" data-aos-delay="400">
+      <h3><i class="fas fa-network-wired"></i> Systems Administration</h3>
+      <ul>
+        <li>Set up and managed IIS, Apache, and Wildfly servers</li>
+      <li>Managed DNS, SSL, firewalls, and backups</li>
+      <li>Dockerized apps for deployment and scalability</li>
+      <li>Performed uptime monitoring, error tracking, and log analysis</li>
+      </ul>
+    </div>
+	
+	<div class="skill-card" data-aos="fade-up-right" data-aos-delay="500">
+	<h3><i class="fab fa-facebook-square"></i> Facebook Integrations</h3>
+  <ul>
+  <li>Implemented Login with Facebook (OAuth2)</li>
+  <li>Integrated Graph API for user data & analytics</li>
+  <li>Enabled social sharing features in product</li>
+  <li>Integrate Facebook Pixel to sync catalogue</li>
+ </ul>
+  </div>
+  
+  <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+  <h3><i class="fab fa-google"></i> Google E-Commerce Integrations</h3>
+<ul>
+  <li> Google Pay for seamless checkout</li>
+  <li> Google Analytics for traffic and e-commerce tracking</li>
+  <li> Google Tag Manager for flexible marketing tags</li>
+  <li> Google Merchant Center to sync product feeds</li>
+  <li> Google Ads conversion tracking for campaign performance</li>
+  <li> Google Search Console for SEO insights</li>
+</ul>
+  </div>
+  
+</section>
+
 	
 	<section>
 	<h2>Contact Me</h2>
@@ -247,6 +368,12 @@
   <footer>
     &copy; Robert Manegene
   </footer>
+  
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
