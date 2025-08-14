@@ -218,6 +218,64 @@ margin-bottom: 30px;
   box-sizing: border-box;
 }
 
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    margin-top: 1rem;
+  }
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  .card-body {
+    padding: 1rem;
+    flex: 1;
+  }
+  .card-title {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+    word-break: break-word;
+  }
+  .card-title a {
+    color: #007acc;
+    text-decoration: none;
+  }
+  .card-title a:hover {
+    text-decoration: underline;
+  }
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .lang {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: #007acc;
+  }
+
+
   </style>
   
   <meta charset="UTF-8">
@@ -248,7 +306,7 @@ margin-bottom: 30px;
     <h1>Robert Manegene</h1>
     <p>Software Engineer | Web Designer | Tech Enthusiast</p>
  <nav class="social-nav" style="text-align: center; margin: 2rem 0;">
-    <a href="https://github.com/manegene" target="_blank" class="download-btn">
+    <a href="#github-projects" class="download-btn">
       <i class="fab fa-github"></i> Github Portfolio </a>
   <a href="https://www.linkedin.com/in/robertmanegene" target="_blank" class="linkedin-btn">
     <i class="fab fa-linkedin"></i> Connect with me on LinkedIn</a>
@@ -269,7 +327,7 @@ margin-bottom: 30px;
     </section>
 
     <section>
-      <h2 class="title">Projects</h2>
+      <h2 class="title">E-Commerce Projects</h2>
       <div class="projects">
         <div class="card">
           <h3><a href="https://github.com/manegene/kotlin-shoppingcart">NopCommerce E-Cart</a></h3>
@@ -314,10 +372,15 @@ margin-bottom: 30px;
 		</div>
       </div>
     </section>
+	
+	<section id="github-projects">
+	<h2 class="title">Github Repositories</h2>
+	  <div class="card-container" id="repo-cards"></div>
+	
+	</section>
 
     <section id="skills">
-  <h2 class="title"
-  >Skills</h2>
+  <h2 class="title">Skills</h2>
   <div class="skills-grid">
     
     <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
@@ -417,6 +480,86 @@ margin-bottom: 30px;
   AOS.init();
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+<script>
+  const username = "manegene";
+  const excludedRepos = ["manegene.github.io", "manegene"];
+  const possibleImages = [
+    "cover.jpg",
+    "cover.png",
+	"images/ProductHomeScreen_Android.png",
+	"logo.png",
+    "thumbnail.jpg",
+    "thumbnail.png",
+    "preview.jpg",
+    "preview.png"
+  ];
+  const defaultImage = "https://via.placeholder.com/300x160?text=No+Image";
+  const repoContainer = document.getElementById("repo-cards");
+
+  async function findRepoImage(repoName) {
+    const checks = possibleImages.map(async img => {
+      const url = `https://raw.githubusercontent.com/${username}/${repoName}/main/${img}`;
+      try {
+        let res = await fetch(url, { method: "HEAD" });
+        if (res.ok) return url;
+      } catch {}
+      return null;
+    });
+
+    const results = await Promise.all(checks);
+    return results.find(url => url) || defaultImage;
+  }
+
+  async function getRepoLanguages(repoName) {
+    try {
+      const res = await fetch(`https://api.github.com/repos/${username}/${repoName}/languages`);
+      const data = await res.json();
+      return Object.keys(data).join(", ") || "Unknown";
+    } catch {
+      return "Unknown";
+    }
+  }
+
+  async function loadRepos() {
+    try {
+      const res = await fetch(`https://api.github.com/users/${username}/repos?sort=updated`);
+      const repos = await res.json();
+
+      const filteredRepos = repos.filter(repo => !excludedRepos.includes(repo.name));
+
+      const repoPromises = filteredRepos.map(async repo => {
+        const [coverImage, languages] = await Promise.all([
+          findRepoImage(repo.name),
+          getRepoLanguages(repo.name)
+        ]);
+
+        return `
+          <div class="card">
+            <img src="${coverImage}" alt="${repo.name}">
+            <div class="card-body">
+              <h3 class="card-title">
+                <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+              </h3>
+              <p class="card-text">${repo.description || "No description provided."}</p>
+              <p class="lang">${languages}</p>
+            </div>
+          </div>
+        `;
+      });
+
+      const cards = await Promise.all(repoPromises);
+      repoContainer.innerHTML = cards.join("");
+    } catch (error) {
+      console.error("Error loading repos:", error);
+    }
+  }
+
+  loadRepos();
+</script>
+
+
+
+
 
 </body>
 </html>
