@@ -1,4 +1,8 @@
+# https://manegene.github.io/robots.txt
 User-agent: *
 Allow: /
+
+# Plugin downloads are linked from the page; no need to crawl the zip files.
+Disallow: /Builds/
 
 Sitemap: https://manegene.github.io/sitemap.xml

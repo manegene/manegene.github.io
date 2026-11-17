@@ -1,564 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CBWS1D2DT9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  gtag('config', 'G-CBWS1D2DT9');
-</script>
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  <title>Robert Manegene | .NET Developer & Technical Support Engineer, Nairobi</title>
+  <meta name="description" content="Robert Manegene is a .NET and Kotlin developer and technical support engineer in Nairobi, Kenya. API integrations, M-Pesa and Pesapal payments, nopCommerce plugins, and SaaS support.">
+  <meta name="author" content="Robert Manegene">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://manegene.github.io/">
+  <meta name="theme-color" content="#0b1f33">
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <!-- AOS CSS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/images/robert-manegene.jpg">
+
+  <!-- Link previews (LinkedIn, WhatsApp, Facebook, X) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Robert Manegene">
+  <meta property="og:title" content="Robert Manegene | .NET Developer & Technical Support Engineer">
+  <meta property="og:description" content="APIs, payment integrations and SaaS support. .NET, Kotlin and JavaScript, from Nairobi, Kenya.">
+  <meta property="og:url" content="https://manegene.github.io/">
+  <meta property="og:image" content="https://manegene.github.io/images/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Robert Manegene, .NET developer and technical support engineer">
+  <meta property="profile:first_name" content="Robert">
+  <meta property="profile:last_name" content="Manegene">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Robert Manegene | .NET Developer & Technical Support Engineer">
+  <meta name="twitter:description" content="APIs, payment integrations and SaaS support. .NET, Kotlin and JavaScript, from Nairobi, Kenya.">
+  <meta name="twitter:image" content="https://manegene.github.io/images/og-card.png">
+
+  <!-- Tells Google who this page is about (used for the knowledge panel and rich results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://manegene.github.io/#robert",
+        "name": "Robert Manegene",
+        "url": "https://manegene.github.io/",
+        "image": "https://manegene.github.io/images/robert-manegene.jpg",
+        "jobTitle": "Software Developer and Technical Support Engineer",
+        "address": { "@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE" },
+        "knowsLanguage": ["English", "Swahili"],
+        "knowsAbout": ["C#", ".NET", "ASP.NET Core", "Entity Framework Core", "Kotlin", "Android", "Xamarin", "REST APIs", "M-Pesa integration", "Pesapal", "nopCommerce", "OAuth2", "SSO", "Docker", "Azure", "Technical support", "Machine learning"],
+        "sameAs": ["https://github.com/manegene", "https://www.linkedin.com/in/robertmanegene"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://manegene.github.io/#site",
+        "url": "https://manegene.github.io/",
+        "name": "Robert Manegene",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://manegene.github.io/#robert" }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CBWS1D2DT9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CBWS1D2DT9');
+  </script>
 
   <style>
-  
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
+    :root {
+      --bg: #ffffff;
+      --bg-soft: #f4f6f9;
+      --ink: #0b1f33;
+      --text: #33424f;
+      --muted: #66737f;
+      --line: #e1e6ec;
+      --accent: #0f766e;
+      --accent-ink: #ffffff;
+      --accent-soft: #e3f3f1;
+      --hero: #0b1f33;
+      --hero-text: #c9d5e1;
+      --card: #ffffff;
+      --shadow: 0 1px 2px rgba(11,31,51,.06), 0 8px 24px rgba(11,31,51,.06);
+      --radius: 12px;
+      --wrap: 1120px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0d1520; --bg-soft: #111c29; --ink: #eef2f6; --text: #c3ccd6; --muted: #8d99a6; --line: #223142;
+        --accent: #2dd4bf; --accent-ink: #062320; --accent-soft: #0f2f2d; --hero: #08111b; --hero-text: #b5c2cf;
+        --card: #132030; --shadow: 0 1px 2px rgba(0,0,0,.3);
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #0d1520; --bg-soft: #111c29; --ink: #eef2f6; --text: #c3ccd6; --muted: #8d99a6; --line: #223142;
+      --accent: #2dd4bf; --accent-ink: #062320; --accent-soft: #0f2f2d; --hero: #08111b; --hero-text: #b5c2cf;
+      --card: #132030; --shadow: 0 1px 2px rgba(0,0,0,.3);
     }
 
-    header {
-      background-color: #1e1e2f;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; overflow-x: clip; }
+    h1, h2, h3 { font-family: "Space Grotesk", Inter, sans-serif; color: var(--ink); line-height: 1.2; margin: 0; }
+    a { color: var(--accent); }
+    img { max-width: 100%; display: block; }
+    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 16px; }
+    @media (min-width: 720px) { .wrap { padding: 0 32px; } }
+    .skip { position: absolute; left: -999px; }
+    .skip:focus { left: 16px; top: 12px; z-index: 100; background: var(--bg); padding: 8px 12px; border-radius: 6px; }
+
+    /* Top bar */
+    .top { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--hero) 92%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,.06); }
+    .top .wrap { display: flex; align-items: center; gap: 24px; height: 64px; }
+    .brand { color: #fff; text-decoration: none; font: 700 18px "Space Grotesk", sans-serif; letter-spacing: .2px; margin-right: auto; display: flex; align-items: center; gap: 10px; }
+    .brand b { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 8px; background: #2dd4bf; color: #062320; font-size: 15px; }
+    .menu { display: flex; gap: 22px; }
+    .menu a { color: #c9d5e1; text-decoration: none; font-size: 15px; font-weight: 500; }
+    .menu a:hover { color: #fff; }
+    .icon-btn { color: #c9d5e1; background: none; border: 0; font-size: 18px; cursor: pointer; padding: 6px; text-decoration: none; }
+    .icon-btn:hover { color: #fff; }
+    .menu-toggle { display: none; }
+    @media (max-width: 860px) {
+      .menu-toggle { display: inline-block; }
+      .menu { display: none; position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--hero); padding: 8px 16px 16px; border-bottom: 1px solid rgba(255,255,255,.08); }
+      .menu.open { display: flex; }
+      .menu a { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.06); }
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    /* Hero */
+    .hero { background: var(--hero); color: var(--hero-text); padding: 72px 0 88px; }
+    .hero .wrap { display: grid; grid-template-columns: 1fr auto; gap: 56px; align-items: center; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: #7ee3d6; font-weight: 500; margin-bottom: 18px; }
+    .eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #2dd4bf; box-shadow: 0 0 0 4px rgba(45,212,191,.2); }
+    .hero h1 { color: #fff; font-size: clamp(2.2rem, 5vw, 3.4rem); letter-spacing: -.5px; }
+    .hero h1 span { display: block; color: #9fb3c7; font-weight: 500; font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+    .hero p.lead { font-size: 1.12rem; max-width: 600px; margin: 22px 0 30px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 8px; font-weight: 600; font-size: 15px; text-decoration: none; border: 1px solid transparent; cursor: pointer; font-family: inherit; }
+    .btn-primary { background: #2dd4bf; color: #062320; }
+    .btn-primary:hover { background: #5eead4; }
+    .btn-ghost { color: #fff; border-color: rgba(255,255,255,.25); }
+    .btn-ghost:hover { border-color: #fff; }
+    .portrait { width: 280px; height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover; border: 6px solid rgba(255,255,255,.08); box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+    .facts { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 30px; font-size: 14px; color: #9fb3c7; }
+    .facts i { color: #2dd4bf; margin-right: 6px; }
+    @media (max-width: 860px) {
+      .hero { padding: 48px 0 60px; }
+      .hero .wrap { grid-template-columns: 1fr; gap: 28px; }
+      .portrait { width: 132px; order: -1; border-width: 4px; }
     }
 
-    header p {
-      font-size: 1.1rem;
-      margin-top: 10px;
-    }
-	.linkedin-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0077b5;
-  color: white;
-  font-size: 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
+    /* Sections */
+    section.block { padding: 88px 0; }
+    section.soft { background: var(--bg-soft); }
+    .head { max-width: 640px; margin-bottom: 44px; }
+    .kicker { font-size: 13px; font-weight: 600; letter-spacing: 1.4px; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+    .head h2 { font-size: clamp(1.7rem, 3.4vw, 2.3rem); }
+    .head p { margin: 14px 0 0; color: var(--muted); }
+    @media (max-width: 720px) { section.block { padding: 60px 0; } }
 
-.linkedin-btn:hover {
-  background-color: #005582;
-}
-.sponsor-btn {
-  background-color: #ea4aaa;
-}
+    /* About */
+    .about { display: grid; grid-template-columns: 1.4fr 1fr; gap: 56px; }
+    .about p { margin: 0 0 16px; font-size: 1.05rem; }
+    .about aside { background: var(--bg-soft); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 26px; }
+    .about aside h3 { font-size: 1rem; margin-bottom: 14px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+    .tags li { font-size: 13px; padding: 5px 10px; border-radius: 6px; background: var(--card); border: 1px solid var(--line); color: var(--ink); }
+    @media (max-width: 860px) { .about { grid-template-columns: 1fr; gap: 28px; } }
 
-.sponsor-btn:hover {
-  background-color: #c33b87;
-}
-.teams-link {
-  background-color: #6264A7; /* Teams purple-blue brand color */
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: bold;
-}
+    /* Services */
+    .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+    @media (max-width: 360px) { .grid { grid-template-columns: 1fr; } }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+    .card .ico { width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); font-size: 19px; margin-bottom: 18px; }
+    .card h3 { font-size: 1.12rem; margin-bottom: 10px; }
+    .card ul { margin: 0; padding-left: 18px; color: var(--text); font-size: 15px; }
+    .card li { margin-bottom: 6px; }
+    .card p { margin: 0 0 14px; font-size: 15px; }
 
-.teams-link:hover {
-  background-color: #4b4f91;
-  color: #fff;
-}
-.title{
-text-align:Center;
-font-size: 2em;
-margin-bottom: 30px;
-}
+    /* Experience */
+    .timeline { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--line); }
+    .timeline > li { position: relative; padding: 0 0 36px 30px; }
+    .timeline > li:last-child { padding-bottom: 0; }
+    .timeline > li::before { content: ""; position: absolute; left: -8px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: var(--bg); border: 3px solid var(--accent); }
+    .role { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+    .role h3 { font-size: 1.15rem; }
+    .role .org { font-weight: 600; color: var(--accent); }
+    .role .when { font-size: 14px; color: var(--muted); margin-left: auto; }
+    .timeline ul { margin: 10px 0 0; padding-left: 18px; font-size: 15px; }
+    .timeline ul li { margin-bottom: 5px; }
+    @media (max-width: 600px) { .role .when { margin-left: 0; width: 100%; } }
 
-#skills {
-  padding: 50px 20px;
-  background: #f9f9f9;
-  text-align: center;
-}
+    /* Projects */
+    .project .meta { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 16px; padding: 0; list-style: none; }
+    .project .meta li { font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); }
+    .project .links { margin-top: auto; display: flex; flex-wrap: wrap; gap: 16px; padding-top: 6px; }
+    .project .links a { font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+    .project .links a:hover { text-decoration: underline; }
+    .project.featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
+    .project.featured h3 { font-size: 1.45rem; }
+    .project.featured .features { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+    .project.featured .features li { display: flex; gap: 10px; font-size: 15px; }
+    .project.featured .features i { color: var(--accent); margin-top: 5px; }
+    @media (max-width: 860px) { .project.featured { grid-template-columns: 1fr; gap: 18px; } }
 
+    .repos-head { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin: 64px 0 22px; flex-wrap: wrap; }
+    .repos-head h3 { font-size: 1.3rem; }
+    .repo { padding: 20px 22px; }
+    .repo h4 { margin: 0 0 6px; font: 600 1rem "Space Grotesk", sans-serif; word-break: break-word; }
+    .repo h4 a { color: var(--ink); text-decoration: none; }
+    .repo h4 a:hover { color: var(--accent); }
+    .repo p { font-size: 14px; color: var(--muted); margin: 0 0 12px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .repo .stats { margin-top: auto; display: flex; gap: 16px; font-size: 13px; color: var(--muted); }
+    .repo .stats i { margin-right: 4px; }
+    .repo-note { color: var(--muted); font-size: 15px; }
 
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
+    /* Certifications */
+    .certs { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+    @media (max-width: 360px) { .certs { grid-template-columns: 1fr; } }
+    .certs li { display: flex; gap: 14px; padding: 18px 20px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
+    .certs i { color: var(--accent); font-size: 18px; margin-top: 3px; }
+    .certs strong { display: block; color: var(--ink); font-weight: 600; font-size: 15px; }
+    .certs span { font-size: 14px; color: var(--muted); }
 
-.skill-card {
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px 25px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 300px;
-  text-align: left;
-  transition: transform 0.3s;
-}
+    /* Contact */
+    .contact { display: grid; grid-template-columns: 1fr 1.2fr; gap: 56px; }
+    .contact .ways { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 12px; }
+    .contact .ways a { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 10px; text-decoration: none; color: var(--ink); background: var(--card); font-weight: 500; }
+    .contact .ways a:hover { border-color: var(--accent); }
+    .contact .ways i { width: 22px; text-align: center; color: var(--accent); font-size: 18px; }
+    form.card { gap: 0; }
+    label { font-size: 14px; font-weight: 600; color: var(--ink); display: block; margin-bottom: 6px; }
+    input, textarea { width: 100%; padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; font: inherit; color: var(--ink); background: var(--bg); margin-bottom: 18px; }
+    input:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+    textarea { resize: vertical; min-height: 140px; }
+    form .btn-primary { background: var(--accent); color: var(--accent-ink); align-self: flex-start; }
+    form .btn-primary:hover { filter: brightness(1.1); background: var(--accent); }
+    .hp { position: absolute; left: -9999px; }
+    @media (max-width: 860px) { .contact { grid-template-columns: 1fr; gap: 32px; } }
 
-.skill-card:hover {
-  transform: translateY(-5px);
-}
+    footer { background: var(--hero); color: #9fb3c7; padding: 32px 0; font-size: 14px; }
+    footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: center; }
+    footer a { color: #c9d5e1; text-decoration: none; margin-left: 18px; }
+    footer a:first-child { margin-left: 0; }
+    footer a:hover { color: #fff; }
 
-.skill-card h3 {
-  color: #333;
-  margin-bottom: 15px;
-  font-size: 1.2em;
-}
-
-.skill-card i {
-  color: #0078D4;
-  margin-right: 8px;
-}
-
-.skill-card ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.skill-card ul li {
-  margin-bottom: 8px;
-  color: #555;
-}
-
-/* 🔁 Responsive behavior */
-@media (max-width: 768px) {
-  .skill-card {
-    width: 100%;
-  }
-}
-
-
-.social-nav a {
-  display: inline-block;
-  padding: 8px 16px;
-  margin-left: 10px;
-  color: #fff;
-  font-weight: 500;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-
-    main {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      color: #1e1e2f;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 8px;
-    }
-
-    .projects, .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .msg-card {
-      background: white;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    .download-btn {
-      display: inline-block;
-      background-color: #1e1e2f;
-      color: white;
-      padding: 10px 20px;
-      margin-top: 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: 0.3s ease;
-    }
-	.msg-btn {
-  display: flex;
-  justify-content: center;  
-  align-items: center;     
-}
-
-
-    .download-btn:hover {
-      background-color: #333;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #1e1e2f;
-      color: white;
-      margin-top: 40px;
-    }
-    input, textarea {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-  box-sizing: border-box;
-}
-
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-    justify-items: center;
-    margin-top: 1rem;
-  }
-  .card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    width: 100%;
-    max-width: 300px;
-    overflow: hidden;
-    transition: transform 0.2s;
-    display: flex;
-    flex-direction: column;
-  }
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  .card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-  }
-  .card-body {
-    padding: 1rem;
-    flex: 1;
-  }
-  .card-title {
-    font-size: 1.2rem;
-    margin: 0 0 0.5rem 0;
-    word-break: break-word;
-  }
-  .card-title a {
-    color: #007acc;
-    text-decoration: none;
-  }
-  .card-title a:hover {
-    text-decoration: underline;
-  }
-  .card-text {
-    font-size: 0.9rem;
-    color: #555;
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* Limit to 3 lines */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-  .lang {
-    margin-top: 0.5rem;
-    font-weight: bold;
-    font-size: 0.85rem;
-    color: #007acc;
-  }
-
-
+    .reveal { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
+    .reveal.shown { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
   </style>
-  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- TITLE + DESCRIPTION -->
-  <title>Robert Manegene | Software Developer, Tech Support, Web Systems & Software Insights</title>
-  <meta name="description" content="Personal blog by Robert Manegene, sharing knowledge on software troubleshooting, remote support, web APIs, and automation.">
-  <meta name="keywords" content="tech support, software troubleshooting, web APIs, remote support, automation, system integration">
-  <meta name="author" content="Robert Manegene">
-
-  <!-- SOCIAL MEDIA / LINK PREVIEW -->
-  <meta property="og:title" content="Robert Manegene | Tech Support Blog">
-  <meta property="og:description" content="Insights on APIs, troubleshooting, automation and software support.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://manegene.github.io">
-  <meta property="og:image" content="https://manegene.github.io/images/preview.jpg"> 
-
-  <!-- TWITTER CARD (optional) -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Robert Manegene | Tech Support Blog">
-  <meta name="twitter:description" content="Learn software troubleshooting, remote support and automation tips.">
-  <meta name="twitter:image" content="https://manegene.github.io/images/preview.jpg">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <header>
-    <h1>Robert Manegene</h1>
-    <p>Expert Software Support | API Integrations | API and Web App Development</p>
- <nav class="social-nav" style="text-align: center; margin: 2rem 0;">
- 
-    <a href="#github-projects" class="download-btn">
-      <i class="fab fa-github"></i> My Projects </a>
-  <a href="https://www.linkedin.com/in/robertmanegene" target="_blank" class="linkedin-btn">
-    <i class="fab fa-linkedin"></i> Connect with me on LinkedIn</a>
-   <a href="https://github.com/sponsors/manegene" target="_blank" class="sponsor-btn">
-    <i class="fas fa-heart"></i> Sponsor Me
-  </a>
-
-</nav>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Robert Manegene, home"><b>RM</b> Robert Manegene</a>
+      <nav class="menu" id="menu" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="icon-btn" id="theme" type="button" aria-label="Switch light or dark mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
+      <button class="icon-btn menu-toggle" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2 class="title">About Me</h2>
-      <p>Hello! I'm Robert Manegene.</br>Developer & Technical Support Specialist Building Practical Web & App Solutions in .NET, Kotlin & JS. Welcome to my portfolio.</p>
-    </section>
-	
- <section id="skills">
-  <h2 class="title">Skills</h2>
-  <div class="skills-grid">
-    
-    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-      <h3><i class="fas fa-headset"></i> Customer Technical support</h3>
-      <ul>
-        <li>Provided tier 1–3 support for SaaS and web-based platforms</li>
-      <li>Diagnosed issues using logs, API responses, and console tools</li>
-      <li>Guided users through complex configurations and onboarding</li>
-      <li>Created documentation and video walkthroughs for clients</li>
-      </ul>
-    </div>
-
-    <div class="skill-card" data-aos="fade-up-right" data-aos-delay="300">
-      <h3><i class="fas fa-code"></i> Development and Debugging</h3>
-      <ul>
-        <li>Fixed frontend/backend bugs in production and staging environments</li>
-      <li>Maintained and extended legacy codebases</li>
-      <li>Created APIs and integrations for third-party services</li>
-      <li>Version control via Git/GitHub, CI/CD pipelines</li>
-      </ul>
-    </div>
-
-    <div class="skill-card" data-aos="fade-left" data-aos-delay="200">
-      <h3><i class="fas fa-plug"></i> Plaform Integrations</h3>
-      <ul>
-        <li>Integrated payment gateways (M-Pesa, Google Pay, PayPal, Stripe)</li>
-      <li>Connected CRMs via APIs</li>
-      <li>Single Sign-On (SSO) via OAuth2, SAML, WS-Trust</li>
-      <li>ERP and Inventory integrations with custom logic</li>
-      </ul>
-    </div>
-	
-	 <div class="skill-card" data-aos="flip-up" data-aos-delay="400">
-      <h3><i class="fas fa-network-wired"></i> Systems Administration</h3>
-      <ul>
-        <li>Set up and managed IIS, Apache, and Wildfly servers</li>
-      <li>Managed DNS, SSL, firewalls, and backups</li>
-      <li>Dockerized apps for deployment and scalability</li>
-      <li>Performed uptime monitoring, error tracking, and log analysis</li>
-      </ul>
-    </div>
-	
-	<div class="skill-card" data-aos="fade-up-right" data-aos-delay="500">
-	<h3><i class="fab fa-facebook-square"></i> Facebook Integrations</h3>
-  <ul>
-  <li>Implemented Login with Facebook (OAuth2)</li>
-  <li>Integrated Graph API for user data & analytics</li>
-  <li>Enabled social sharing features in product</li>
-  <li>Integrate Facebook Pixel to sync catalogue</li>
- </ul>
-  </div>
-  
-  <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
-  <h3><i class="fab fa-google"></i> Google E-Commerce Integrations</h3>
-<ul>
-  <li> Google Pay for seamless checkout</li>
-  <li> Google Analytics for traffic and e-commerce tracking</li>
-  <li> Google Tag Manager for flexible marketing tags</li>
-  <li> Google Merchant Center to sync product feeds</li>
-  <li> Google Ads conversion tracking for campaign performance</li>
-  <li> Google Search Console for SEO insights</li>
-</ul>
-  </div>
-  
-</section>
-
-	<section id="github-projects">
-	<h2 class="title">Github Repositories</h2>
-	  <div class="card-container" id="repo-cards"></div>
-	
-	</section>
-
-    <section>
-      <h2 class="title">E-Commerce Projects</h2>
-      <div class="projects">
-        <div class="card">
-          <h3><a href="https://github.com/manegene/kotlin-shoppingcart">NopCommerce E-Cart</a></h3>
-          <p>online shopping android application developed in Kotlin. 
-		  The application is is a template and can be used to connect to different APIs, simply update the endpoint
-		  in the string resources file.This app is secured with firebase Oauth.</p>
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Open to remote roles and contract work</div>
+        <h1>Robert Manegene
+          <span>Software developer &amp; technical support engineer</span>
+        </h1>
+        <p class="lead">I build and support web systems, APIs and Android apps in .NET, Kotlin and JavaScript. Most of my work connects businesses to the services they rely on: M-Pesa and card payments, single sign-on, ERPs and e-commerce stores.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#contact"><i class="fa-solid fa-paper-plane"></i> Get in touch</a>
+          <a class="btn btn-ghost" href="#projects"><i class="fa-solid fa-code"></i> See my work</a>
         </div>
-        <div class="card">
-          <h3><a href="https://github.com/manegene/NopCommerce-API.git">NopCommerce API</a></h3>
-          <p>This project is built on Nopcommerce Opensource E-commerce database model It is meant to work on any Nopcommerce store without the need to keep 
-		  updating the dependencies/methods with each new Nopcommerce version releases. 
-		  The API is a standalone project and should be hosted on its own IIS instance pool--do not upload it to your store like regular plugin</p>
+        <div class="facts">
+          <span><i class="fa-solid fa-location-dot"></i>Nairobi, Kenya (EAT, UTC+3)</span>
+          <span><i class="fa-solid fa-language"></i>English, Swahili</span>
+          <span><i class="fa-solid fa-plane"></i>Willing to relocate</span>
         </div>
-		<div class="card">
-		<h3><a href="https://github.com/manegene/nopcommerce-restapi-plugin.git">NopCommerce API Plugin</a></h3>
-		<p>Integrate your NopCommerce powered store with this API plugin. The plugins is JWt secured aand requires no special configuration. Simply upload and install and you can access your store through secure API endpoints.
-		The base address is the your store web address. 
-		eg, https://localhost/restapi{/endpoint}. 
-		The method specific route will be indicated for each method in more details section</p>
-		<a href="Builds/Misc.RestAPI.zip" download class="download-btn">
-        <i class="fas fa-download"></i> Ready to deploy plugin file
-        </a>
-		</div>
-		<div class="card">
-		<h3><a href="https://github.com/manegene/Nop.Plugin.Payments.LipanaMpesa.git">LipanaMpesa Plugin</a></h3>
-		<p>A nopCommerce plugin for M-Pesa checkout payment option. To use it on your nopCommerce site,
-		simply add it as a plugin project, clean and build</p>
-		<a href="Builds/Nop.Plugin.Payments.LipanaMpesa.zip" download class="download-btn">
-        <i class="fas fa-download"></i> Ready to deploy plugin file
-        </a>
-		</div>
-		<div class="card">
-		<h3><a href="https://github.com/manegene/payments.pesapal.git">Pesapal Plugin</a></h3>
-		<p>Pesapal plugin for NopCommerce</p>
-		<a href="Builds/Payments.Pesapal.zip" download class="download-btn">
-        <i class="fas fa-download"></i> Ready to deploy plugin file
-        </a>
-		</div>
-		<div class="card">
-		<h3><a href="https://github.com/manegene/Neural-Network-SMS_Text-Classifier.git">NN-SMS Text Classifier</a></h3>
-		<p>Machine learning model that will classify SMS messages as either "ham" or "spam". A "ham" message is a normal message sent by a friend. A "spam" message is an advertisement or a message sent by a company.</p>
-		</div>
+      </div>
+      <img class="portrait" src="images/robert-manegene.jpg" width="640" height="640" alt="Portrait of Robert Manegene">
+    </div>
+  </section>
+
+  <main id="main">
+    <section class="block" id="about">
+      <div class="wrap about">
+        <div class="reveal">
+          <div class="kicker">About</div>
+          <div class="head" style="margin-bottom:24px"><h2>Developer first, with years on the support desk</h2></div>
+          <p>I've worked both sides of software: writing the code, and being the person customers call when it breaks. That means I read logs, API responses and stack traces as readily as I write features, and I explain fixes in plain language.</p>
+          <p>I've led a support and integration team, supervising technicians and handling tier 1–3 escalations for SaaS customers. I've built payment and API plugins for nopCommerce, Android apps in Kotlin and Xamarin, and the C# services behind them.</p>
+          <p>Today I run <strong>Tillwise Business Suite</strong>, a multi-tenant point-of-sale and business platform for Kenyan small businesses, built in ASP.NET Core with a Kotlin Android app.</p>
+        </div>
+        <aside class="reveal" aria-label="Tools I use">
+          <h3>Tools I work with</h3>
+          <ul class="tags">
+            <li>C# / .NET</li><li>ASP.NET Core MVC</li><li>Entity Framework Core</li><li>Kotlin</li><li>Xamarin</li><li>JavaScript</li>
+            <li>SQL Server</li><li>PostgreSQL</li><li>REST APIs</li><li>Swagger</li><li>OAuth2 / JWT</li><li>SAML</li>
+            <li>Docker</li><li>Azure</li><li>Azure DevOps</li><li>GitHub Actions</li><li>IIS</li><li>Jira</li>
+            <li>Microsoft 365</li><li>Active Directory</li><li>Intune</li><li>Power BI</li><li>Python</li><li>NUnit / xUnit</li>
+          </ul>
+        </aside>
       </div>
     </section>
-	
-	
-	<section>
-	<h2 class="title">Contact Me</h2>
-	<form action="https://formspree.io/f/xyzeboob" method="POST" class="msg-card">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required style="width:100%; padding:8px; margin-bottom:10px;"/>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="_replyto" required style="width:100%; padding:8px; margin-bottom:10px;"/>
+    <section class="block soft" id="services">
+      <div class="wrap">
+        <div class="head reveal">
+          <div class="kicker">What I do</div>
+          <h2>Skills that ship and keep things running</h2>
+          <p>From the first API call to the support ticket six months later.</p>
+        </div>
+        <div class="grid">
+          <article class="card reveal">
+            <div class="ico"><i class="fa-solid fa-code"></i></div>
+            <h3>Web &amp; API development</h3>
+            <ul>
+              <li>Build ASP.NET Core apps and REST APIs with EF Core</li>
+              <li>Secure endpoints with JWT and OAuth2</li>
+              <li>Document APIs with Swagger for partner teams</li>
+              <li>Maintain and extend legacy .NET Framework code</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="ico"><i class="fa-solid fa-money-bill-transfer"></i></div>
+            <h3>Payment integrations</h3>
+            <ul>
+              <li>M-Pesa (Daraja), Pesapal, PayPal, Stripe and Google Pay</li>
+              <li>Reconcile payments against callbacks and webhooks</li>
+              <li>Handle refunds, failed payments and duplicates</li>
+              <li>Add fraud and KYC checks to checkout flows</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="ico"><i class="fa-solid fa-headset"></i></div>
+            <h3>Technical support</h3>
+            <ul>
+              <li>Resolve tier 1–3 issues for SaaS and web platforms</li>
+              <li>Diagnose with logs, API responses and browser tools</li>
+              <li>Onboard customers through complex configurations</li>
+              <li>Write guides and record video walkthroughs</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="ico"><i class="fa-solid fa-plug"></i></div>
+            <h3>Systems integration</h3>
+            <ul>
+              <li>Connect CRMs, ERPs and inventory systems through APIs</li>
+              <li>Map data between finance and business systems</li>
+              <li>Set up SSO with OAuth2, SAML, Okta and Ping</li>
+              <li>Integrate Dynamics 365 and Business Central</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="ico"><i class="fa-brands fa-android"></i></div>
+            <h3>Android apps</h3>
+            <ul>
+              <li>Build Kotlin apps with MVVM, plus Xamarin.Forms</li>
+              <li>Publish to Google Play with signed CI/CD releases</li>
+              <li>Connect apps to their own C# API services</li>
+              <li>Add Firebase and Google sign-in</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="ico"><i class="fa-solid fa-server"></i></div>
+            <h3>Hosting &amp; operations</h3>
+            <ul>
+              <li>Run apps on IIS, Linux VPS, Docker and Azure App Service</li>
+              <li>Manage DNS, SSL, firewalls and backups</li>
+              <li>Monitor uptime, track errors, analyse logs</li>
+              <li>Set up Google Analytics, Tag Manager and Search Console</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required style="width:100%; padding:8px; margin-bottom:10px;"></textarea>
-	
-	<div class="msg-btn">
-    <button type="submit" class="download-btn">Send Message</button>
-	</div>
-	
-  </form>
-	
-	</section>
+    <section class="block" id="experience">
+      <div class="wrap">
+        <div class="head reveal">
+          <div class="kicker">Experience</div>
+          <h2>Where I've worked</h2>
+        </div>
+        <ol class="timeline">
+          <li class="reveal">
+            <div class="role"><h3>Founder &amp; developer</h3><span class="org">Tillwise Business Suite</span><span class="when">Oct 2026 – present</span></div>
+            <ul>
+              <li>Designed and built a multi-tenant SaaS for small businesses: point of sale, stock, bookkeeping and M-Pesa payments as subscription modules</li>
+              <li>Built the Kotlin Android merchant app and automated signed releases with GitHub Actions</li>
+              <li>Run hosting, billing, customer onboarding and support</li>
+            </ul>
+          </li>
+          <li class="reveal">
+            <div class="role"><h3>Prompt engineer (contract)</h3><span class="org">micro1</span><span class="when">Jan 2026 – present</span></div>
+            <ul>
+              <li>Write prompts and evaluate AI agents' test results, scoring the quality of their answers</li>
+              <li>Train agents on code security tasks in Docker environments</li>
+            </ul>
+          </li>
+          <li class="reveal">
+            <div class="role"><h3>Lead support &amp; integration engineer</h3><span class="org">Pacera AB</span><span class="when">Oct 2025 – Sep 2026</span></div>
+            <ul>
+              <li>Led a team of five technicians handling customer support and integrations</li>
+              <li>Owned customer integrations and escalated support cases</li>
+              <li>Supported SOC 2 compliance work</li>
+            </ul>
+          </li>
+          <li class="reveal">
+            <div class="role"><h3>Co-founder &amp; developer</h3><span class="org">HabaHabaMall</span><span class="when">2020 – 2022</span></div>
+            <ul>
+              <li>Built and published the HabaHabaMall Android shopping app on Google Play in Kotlin (MVVM)</li>
+              <li>Built the C# API service behind the app</li>
+            </ul>
+          </li>
+          <li class="reveal">
+            <div class="role"><h3>Junior developer → senior engineer</h3><span class="org">AARO</span><span class="when">Dec 2015 – Sep 2025</span></div>
+            <ul>
+              <li>Developed and maintained .NET Framework applications</li>
+              <li>Automated tests for Java web systems and managed test cases in TestRail</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
 
+    <section class="block soft" id="projects">
+      <div class="wrap">
+        <div class="head reveal">
+          <div class="kicker">Projects</div>
+          <h2>Selected work</h2>
+          <p>Open-source plugins and apps. The nopCommerce plugins come with ready-to-install builds.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card project featured reveal">
+            <div>
+              <ul class="meta"><li>ASP.NET Core</li><li>PostgreSQL</li><li>Kotlin</li><li>SaaS</li></ul>
+              <h3>Tillwise Business Suite</h3>
+              <p style="margin-top:12px">A business platform for Kenyan shops and SMEs. Each business turns on only the modules it pays for, and its staff use it on the web or on Android.</p>
+              <div class="links"><a href="https://tillwise.co.ke" target="_blank" rel="noopener">Visit tillwise.co.ke <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+            <ul class="features">
+              <li><i class="fa-solid fa-check"></i>Point of sale with M-Pesa, Pesapal and card payments</li>
+              <li><i class="fa-solid fa-check"></i>Stock, bookkeeping and an optional chart of accounts</li>
+              <li><i class="fa-solid fa-check"></i>Online shop and SMS / email campaigns</li>
+              <li><i class="fa-solid fa-check"></i>Google and Facebook sign-in, role-based staff access</li>
+              <li><i class="fa-solid fa-check"></i>Android app that takes each business's name, logo and colours</li>
+            </ul>
+          </article>
+
+          <article class="card project reveal">
+            <ul class="meta"><li>C#</li><li>nopCommerce</li><li>JWT</li></ul>
+            <h3>nopCommerce REST API plugin</h3>
+            <p>Gives a nopCommerce store secure, JWT-protected API endpoints. Upload and install like any plugin; the API lives at your store's address, e.g. <code>/restapi/{endpoint}</code>.</p>
+            <div class="links">
+              <a href="https://github.com/manegene/nopcommerce-restapi-plugin" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source</a>
+              <a href="Builds/Misc.RestAPI.zip" download><i class="fa-solid fa-download"></i> Plugin build</a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <ul class="meta"><li>C#</li><li>nopCommerce</li><li>M-Pesa</li></ul>
+            <h3>Lipa na M-Pesa plugin</h3>
+            <p>Adds M-Pesa as a checkout payment option in nopCommerce. Add it to your solution as a plugin project, then clean and build, or install the ready build.</p>
+            <div class="links">
+              <a href="https://github.com/manegene/Nop.Plugin.Payments.LipanaMpesa" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source</a>
+              <a href="Builds/Nop.Plugin.Payments.LipanaMpesa.zip" download><i class="fa-solid fa-download"></i> Plugin build</a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <ul class="meta"><li>C#</li><li>nopCommerce</li><li>Pesapal</li></ul>
+            <h3>Pesapal payment plugin</h3>
+            <p>Lets nopCommerce stores take card and mobile money payments through Pesapal.</p>
+            <div class="links">
+              <a href="https://github.com/manegene/payments.pesapal" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source</a>
+              <a href="Builds/Payments.Pesapal.zip" download><i class="fa-solid fa-download"></i> Plugin build</a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <ul class="meta"><li>C#</li><li>ASP.NET</li><li>REST</li></ul>
+            <h3>nopCommerce standalone API</h3>
+            <p>A separate API built on the nopCommerce data model, so it keeps working across nopCommerce upgrades. Host it in its own IIS app pool, not as a store plugin.</p>
+            <div class="links"><a href="https://github.com/manegene/NopCommerce-API" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source</a></div>
+          </article>
+
+          <article class="card project reveal">
+            <ul class="meta"><li>Kotlin</li><li>Android</li><li>Firebase</li></ul>
+            <h3>Kotlin shopping cart app</h3>
+            <p>An Android shopping app template secured with Firebase sign-in. Point it at any compatible API by changing one endpoint in the string resources.</p>
+            <div class="links"><a href="https://github.com/manegene/kotlin-shoppingcart" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source</a></div>
+          </article>
+
+          <article class="card project reveal">
+            <ul class="meta"><li>Xamarin.Forms</li><li>Android</li><li>iOS</li></ul>
+            <h3>Android &amp; iOS shop template</h3>
+            <p>A cross-platform e-commerce app template in Xamarin.Forms, sharing one C# codebase between Android and iOS.</p>
+            <div class="links"><a href="https://github.com/manegene/Android-iOS-Mobile-Template" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source</a></div>
+          </article>
+
+          <article class="card project reveal">
+            <ul class="meta"><li>Python</li><li>Machine learning</li><li>NLP</li></ul>
+            <h3>SMS spam classifier</h3>
+            <p>A neural network that labels SMS messages as normal ("ham") or advertising ("spam").</p>
+            <div class="links"><a href="https://github.com/manegene/Neural-Network-SMS_Text-Classifier" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source</a></div>
+          </article>
+        </div>
+
+        <div class="repos-head">
+          <h3>Latest on GitHub</h3>
+          <a href="https://github.com/manegene" target="_blank" rel="noopener" class="btn btn-ghost" style="color:var(--ink);border-color:var(--line)"><i class="fa-brands fa-github"></i> All repositories</a>
+        </div>
+        <div class="grid" id="repos" aria-live="polite">
+          <p class="repo-note">See all my repositories at <a href="https://github.com/manegene">github.com/manegene</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="certifications">
+      <div class="wrap">
+        <div class="head reveal">
+          <div class="kicker">Learning</div>
+          <h2>Certifications</h2>
+        </div>
+        <ul class="certs">
+          <li class="reveal"><i class="fa-solid fa-award"></i><div><strong>Elements of AI for Business</strong><span>MinnaLearn / University of Helsinki · 2026</span></div></li>
+          <li class="reveal"><i class="fa-solid fa-award"></i><div><strong>Machine Learning with Python</strong><span>freeCodeCamp · 2025</span></div></li>
+          <li class="reveal"><i class="fa-solid fa-award"></i><div><strong>Foundational C# with Microsoft</strong><span>freeCodeCamp / Microsoft · 2023</span></div></li>
+          <li class="reveal"><i class="fa-solid fa-award"></i><div><strong>Google Cloud Platform Fundamentals: Core Infrastructure</strong><span>Google Cloud / Coursera · 2020</span></div></li>
+          <li class="reveal"><i class="fa-solid fa-award"></i><div><strong>Google Digital Skills</strong><span>Google · 2020</span></div></li>
+          <li class="reveal"><i class="fa-solid fa-award"></i><div><strong>Introduction to Data Science in Python</strong><span>University of Michigan / Coursera · 2019</span></div></li>
+          <li class="reveal"><i class="fa-solid fa-award"></i><div><strong>Human Resource Management</strong><span>UNICAF University · 2019</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block soft" id="contact">
+      <div class="wrap contact">
+        <div class="reveal">
+          <div class="kicker">Contact</div>
+          <h2 style="font-size:clamp(1.7rem,3.4vw,2.3rem)">Let's work together</h2>
+          <p style="color:var(--muted);margin:14px 0 0">Hiring for a remote support or .NET role, or need a payment integration built? Send a message and I'll get back to you.</p>
+          <ul class="ways">
+            <li><a href="https://www.linkedin.com/in/robertmanegene" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/robertmanegene</a></li>
+            <li><a href="https://github.com/manegene" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> github.com/manegene</a></li>
+            <li><a href="https://github.com/sponsors/manegene" target="_blank" rel="noopener"><i class="fa-solid fa-heart"></i> Sponsor my open-source work</a></li>
+          </ul>
+        </div>
+        <form class="card reveal" action="https://formspree.io/f/xyzeboob" method="POST">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <label for="email">Email</label>
+          <input id="email" name="_replyto" type="email" autocomplete="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="_subject" value="New message from manegene.github.io">
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send message</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer>
-    &copy; <span id="year"></span> Robert Manegene. All rights reserved.
+    <div class="wrap">
+      <span>&copy; <span id="year">2026</span> Robert Manegene</span>
+      <span>
+        <a href="https://www.linkedin.com/in/robertmanegene" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/manegene" target="_blank" rel="noopener">GitHub</a>
+        <a href="#top">Back to top</a>
+      </span>
+    </div>
   </footer>
-  
-<!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-<script>
-  const username = "manegene";
-  const excludedRepos = ["manegene.github.io", "manegene"];
-  const possibleImages = [
-    "cover.jpg",
-    "cover.png",
-	"images/ProductHomeScreen_Android.png",
-	"logo.png",
-    "thumbnail.jpg",
-    "thumbnail.png",
-    "preview.jpg",
-    "preview.png"
-  ];
-  const defaultImage = "https://via.placeholder.com/300x160?text=No+Image";
-  const repoContainer = document.getElementById("repo-cards");
 
-  async function findRepoImage(repoName) {
-    const checks = possibleImages.map(async img => {
-      const url = `https://raw.githubusercontent.com/${username}/${repoName}/main/${img}`;
-      try {
-        let res = await fetch(url, { method: "HEAD" });
-        if (res.ok) return url;
-      } catch {}
-      return null;
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Mobile menu
+    const menu = document.getElementById("menu"), menuBtn = document.getElementById("menu-btn");
+    menuBtn.addEventListener("click", () => {
+      const open = menu.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", open);
+    });
+    menu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => { menu.classList.remove("open"); menuBtn.setAttribute("aria-expanded", false); }));
+
+    // Light / dark switch (remembered on this device)
+    const root = document.documentElement;
+    try { const t = localStorage.getItem("theme"); if (t) root.dataset.theme = t; } catch {}
+    document.getElementById("theme").addEventListener("click", () => {
+      const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+      root.dataset.theme = dark ? "light" : "dark";
+      try { localStorage.setItem("theme", root.dataset.theme); } catch {}
     });
 
-    const results = await Promise.all(checks);
-    return results.find(url => url) || defaultImage;
-  }
+    // Fade sections in as they scroll into view
+    const io = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("shown"); io.unobserve(e.target); }
+    }), { rootMargin: "0px 0px -40px 0px" }) : null;
+    document.querySelectorAll(".reveal").forEach(el => io ? io.observe(el) : el.classList.add("shown"));
 
-  async function getRepoLanguages(repoName) {
-    try {
-      const res = await fetch(`https://api.github.com/repos/${username}/${repoName}/languages`);
-      const data = await res.json();
-      return Object.keys(data).join(", ") || "Unknown";
-    } catch {
-      return "Unknown";
-    }
-  }
-
-  async function loadRepos() {
-    try {
-      const res = await fetch(`https://api.github.com/users/${username}/repos?sort=updated`);
-      const repos = await res.json();
-
-      const filteredRepos = repos.filter(repo => !excludedRepos.includes(repo.name));
-
-      const repoPromises = filteredRepos.map(async repo => {
-        const [coverImage, languages] = await Promise.all([
-          findRepoImage(repo.name),
-          getRepoLanguages(repo.name)
-        ]);
-
-        return `
-          <div class="card">
-            <img src="${coverImage}" alt="${repo.name}">
-            <div class="card-body">
-              <h3 class="card-title">
-                <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-              </h3>
-              <p class="card-text">${repo.description || "No description provided."}</p>
-              <p class="lang">${languages}</p>
-            </div>
+    // Latest public repositories (one GitHub API call, cached for an hour)
+    (async () => {
+      const box = document.getElementById("repos");
+      const skip = ["manegene.github.io", "manegene"];
+      const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+      let repos;
+      try {
+        const cached = JSON.parse(sessionStorage.getItem("repos") || "null");
+        if (cached && Date.now() - cached.at < 3600000) repos = cached.data;
+      } catch {}
+      try {
+        if (!repos) {
+          const res = await fetch("https://api.github.com/users/manegene/repos?sort=pushed&per_page=30");
+          if (!res.ok) return;
+          repos = (await res.json()).map(r => ({ name: r.name, url: r.html_url, desc: r.description, lang: r.language, stars: r.stargazers_count, fork: r.fork, pushed: r.pushed_at }));
+          try { sessionStorage.setItem("repos", JSON.stringify({ at: Date.now(), data: repos })); } catch {}
+        }
+      } catch { return; }
+      const list = repos.filter(r => !r.fork && !skip.includes(r.name)).slice(0, 6);
+      if (!list.length) return;
+      box.innerHTML = list.map(r => `
+        <article class="card repo">
+          <h4><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a></h4>
+          <p>${esc(r.desc || "No description yet.")}</p>
+          <div class="stats">
+            ${r.lang ? `<span><i class="fa-solid fa-circle" style="font-size:9px;color:var(--accent)"></i>${esc(r.lang)}</span>` : ""}
+            <span><i class="fa-regular fa-star"></i>${r.stars}</span>
+            <span>Updated ${new Date(r.pushed).toLocaleDateString("en-GB", { month: "short", year: "numeric" })}</span>
           </div>
-        `;
-      });
-
-      const cards = await Promise.all(repoPromises);
-      repoContainer.innerHTML = cards.join("");
-    } catch (error) {
-      console.error("Error loading repos:", error);
-    }
-  }
-
-  loadRepos();
-</script>
-
-
-
-
-
+        </article>`).join("");
+    })();
+  </script>
 </body>
 </html>
