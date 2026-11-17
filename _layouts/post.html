@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  {% feed_meta %}
+  <meta name="theme-color" content="#0b1f33">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/blog.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CBWS1D2DT9"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-CBWS1D2DT9');</script>
+</head>
+<body>
+  <header class="top"><div class="bar">
+    <a class="brand" href="/"><b>RM</b> Robert Manegene</a>
+    <nav><a class="hide-sm" href="/#projects">Projects</a><a class="on" href="/blog/">Blog</a><a href="/#contact">Contact</a></nav>
+  </div></header>
+
+  <main class="wrap">
+    <header class="post-head">
+      <div class="crumbs"><a href="/">Home</a> › <a href="/blog/">Blog</a></div>
+      <h1 class="title">{{ page.title }}</h1>
+      <div class="meta">
+        <span>{{ page.date | date: "%-d %B %Y" }}</span>
+        <span>{{ content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
+        {% if page.tags %}<span>{{ page.tags | join: " · " }}</span>{% endif %}
+      </div>
+    </header>
+
+    <article>
+      {{ content }}
+    </article>
+
+    <div class="author">
+      <img src="/images/robert-manegene.jpg" alt="Robert Manegene" width="64" height="64">
+      <div>
+        <strong>Robert Manegene</strong>
+        <p>.NET and Kotlin developer and technical support engineer in Nairobi. I build payment integrations, APIs and Android apps.
+          <a href="/#contact">Get in touch</a> or see my work on <a href="https://github.com/manegene">GitHub</a>.</p>
+      </div>
+    </div>
+
+    {% assign others = site.posts | where_exp: "p", "p.url != page.url" %}
+    {% if others.size > 0 %}
+    <h2 style="font-size:1.3rem">More guides</h2>
+    <ul class="posts">
+      {% for p in others limit: 3 %}
+      <li><div class="date">{{ p.date | date: "%-d %b %Y" }}</div><h2><a href="{{ p.url }}">{{ p.title }}</a></h2><p>{{ p.description }}</p></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </main>
+
+  <footer><div class="bar">
+    <span>&copy; {{ site.time | date: "%Y" }} Robert Manegene</span>
+    <span><a href="/blog/feed.xml">RSS</a><a href="https://www.linkedin.com/in/robertmanegene">LinkedIn</a><a href="https://github.com/manegene">GitHub</a></span>
+  </div></footer>
+</body>
+</html>

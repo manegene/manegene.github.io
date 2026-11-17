@@ -1,21 +1,29 @@
-# manegene.github.io redesign
+# manegene.github.io: blog setup
 
-Copy these into the root of your manegene.github.io repo, replacing the old ones, then push.
+GitHub Pages builds this site with Jekyll on every push. Nothing to install.
 
-| File | What it is |
+## Write a new post
+1. Add a file to `_posts/` named `YYYY-MM-DD-short-title.md` (the date must not be in the future, or it won't show).
+2. Start it with:
+   ```
+   ---
+   title: "The question people search for, as a title"
+   description: "One or two sentences: what the reader will be able to do. Shown on Google and on the blog list."
+   tags: [M-Pesa, nopCommerce]
+   ---
+   ```
+3. Write the post in Markdown below that (## headings, lists, `code`, tables, images in /images/).
+4. Push. The post appears at /blog/short-title/, on /blog/, on the homepage ("Guides from real projects"),
+   in /sitemap.xml and in /blog/feed.xml automatically.
+5. Google Search Console → URL Inspection → paste the post's address → Request indexing. Share it once on LinkedIn.
+
+## Files
+| File | What it does |
 |---|---|
-| index.html | The new site (replaces the old one) |
-| 404.html | GitHub Pages shows this for broken links |
-| robots.txt | Lets search engines crawl everything except the /Builds zip files, and points them to the sitemap |
-| sitemap.xml | Lists the page for Google and Bing |
-| images/robert-manegene.jpg | Profile photo, cropped and resized (53 KB instead of 650 KB) |
-| images/og-card.png | The picture shown when the link is shared on LinkedIn, WhatsApp, etc. |
+| `_config.yml` | Site name, address, author and the sitemap / feed / SEO plugins |
+| `_layouts/post.html` | How a post looks |
+| `blog/index.html` | The list of posts |
+| `assets/blog.css` | Blog styles (same colours as the homepage) |
+| `index.html` | The homepage; its "Guides from real projects" section lists the latest 3 posts |
 
-Leave favicon.ico, Builds/ and images/preview.jpg where they are (preview.jpg is no longer used; delete it if you like).
-
-## After you push
-1. Google Search Console → add property `https://manegene.github.io/` → verify with the HTML tag method (add the meta tag to index.html, near the other meta tags).
-2. Sitemaps → submit `sitemap.xml`. URL Inspection → `https://manegene.github.io/` → Request indexing.
-3. Do the same in Bing Webmaster Tools (it can import from Search Console).
-4. Each time you change the site, update `<lastmod>` in sitemap.xml.
-5. Check the share preview at https://www.linkedin.com/post-inspector/
+`sitemap.xml` is now made by Jekyll (delete the old hand-written one). `robots.txt` stays as it is.

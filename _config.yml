@@ -1,0 +1,40 @@
+# Jekyll settings for manegene.github.io (GitHub Pages builds the site from these on every push).
+title: Robert Manegene
+description: >-
+  .NET and Kotlin developer and technical support engineer in Nairobi, Kenya. Guides on M-Pesa and Pesapal payments,
+  nopCommerce, APIs and SaaS support.
+url: https://manegene.github.io
+lang: en_KE
+timezone: Africa/Nairobi
+author:
+  name: Robert Manegene
+  url: https://manegene.github.io
+image: /images/og-card.png
+logo: /images/robert-manegene.jpg
+social:
+  name: Robert Manegene
+  links:
+    - https://github.com/manegene
+    - https://www.linkedin.com/in/robertmanegene
+
+# Posts live at /blog/<title>/
+permalink: /blog/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true
+
+plugins:
+  - jekyll-sitemap   # writes /sitemap.xml with every page and post
+  - jekyll-feed      # writes /blog/feed.xml for readers and aggregators
+  - jekyll-seo-tag   # title, description, share picture and Google's article data on each post
+
+feed:
+  path: blog/feed.xml
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+
+exclude: [README.md, LICENSE]
